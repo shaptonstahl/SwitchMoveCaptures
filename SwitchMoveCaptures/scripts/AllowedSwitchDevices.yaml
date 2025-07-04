@@ -1,0 +1,12 @@
+# SwitchMoveCaptures External Configuration
+#
+# This file is used to store device-specific settings, including SD card serial numbers and user-set labels.
+#
+# Example:
+# Devices:
+#   - Serial: "1234567890ABCDEF"
+#     Label: "Steve's Main Switch"
+#   - Serial: "0987654321FEDCBA"
+#     Label: "Kids' Switch"
+
+Devices: []
