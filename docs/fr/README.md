@@ -20,7 +20,7 @@ Déplacez automatiquement les captures d'écran et vidéos de votre Nintendo Swi
 
 1. Clonez ce dépôt :
     ```powershell
-    git clone https://github.com/yourusername/SwitchMoveCaptures.git
+    git clone https://github.com/shaptonstahl/SwitchMoveCaptures.git
     ```
 2. Connectez la carte microSD de votre Nintendo Switch à votre PC.
    

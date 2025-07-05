@@ -17,7 +17,7 @@ Automatically move screen captures and videos from your Nintendo Switch to your 
 
 1. Clone this repository:
     ```powershell
-    git clone https://github.com/yourusername/SwitchMoveCaptures.git
+    git clone https://github.com/shaptonstahl/SwitchMoveCaptures.git
     ```
 2. Connect your Nintendo Switch microSD card to your PC.
    
