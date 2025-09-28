@@ -6,7 +6,7 @@ AppName=SwitchMoveCaptures
 AppVersion=1.0
 DefaultDirName={pf}\SwitchMoveCaptures
 DefaultGroupName=SwitchMoveCaptures
-UninstallDisplayIcon={app}\scripts\SwitchMoveCapturesGUI.ps1
+UninstallDisplayIcon={sys}\WindowsPowerShell\v1.0\powershell.exe
 OutputBaseFilename=SwitchMoveCaptures-Setup
 Compression=lzma
 SolidCompression=yes
@@ -24,11 +24,11 @@ Source: "README.md"; DestDir: "{app}"
 
 [Icons]
 
-Name: "{group}\SwitchMoveCaptures GUI"; Filename: "powershell.exe"; Parameters: -ExecutionPolicy Bypass -File "{app}\scripts\SwitchMoveCapturesGUI.ps1"; WorkingDir: "{app}\scripts"; IconFilename: "powershell.exe"
-Name: "{group}\SwitchMoveCaptures Script"; Filename: "powershell.exe"; Parameters: -ExecutionPolicy Bypass -File "{app}\scripts\SwitchMoveCaptures.ps1"; WorkingDir: "{app}\scripts"; IconFilename: "powershell.exe"
+Name: "{group}\SwitchMoveCaptures GUI"; Filename: "{sys}\WindowsPowerShell\v1.0\powershell.exe"; Parameters: "-ExecutionPolicy Bypass -File ""{app}\scripts\SwitchMoveCapturesGUI.ps1"""; WorkingDir: "{app}\scripts"; IconFilename: "{sys}\WindowsPowerShell\v1.0\powershell.exe"
+Name: "{group}\SwitchMoveCaptures Script"; Filename: "{sys}\WindowsPowerShell\v1.0\powershell.exe"; Parameters: "-ExecutionPolicy Bypass -File ""{app}\scripts\SwitchMoveCaptures.ps1"""; WorkingDir: "{app}\scripts"; IconFilename: "{sys}\WindowsPowerShell\v1.0\powershell.exe"
 
 [Run]
-Filename: "powershell.exe"; Parameters: "-ExecutionPolicy Bypass -File \"{app}\scripts\SwitchMoveCapturesGUI.ps1\""; Description: "Launch SwitchMoveCaptures GUI"; Flags: nowait postinstall skipifsilent
+Filename: "{sys}\WindowsPowerShell\v1.0\powershell.exe"; Parameters: "-ExecutionPolicy Bypass -File ""{app}\scripts\SwitchMoveCapturesGUI.ps1"""; Description: "Launch SwitchMoveCaptures GUI"; Flags: nowait postinstall skipifsilent
 
 [UninstallDelete]
 Type: filesandordirs; Name: "{app}"
