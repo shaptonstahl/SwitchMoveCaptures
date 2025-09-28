@@ -1,3 +1,5 @@
+[English Documentation]
+
 # How to Connect Your Nintendo Switch to a PC via USB Cable
 
 This guide explains how to connect your Nintendo Switch directly to your Windows PC using a USB cable to transfer screenshots and videos.

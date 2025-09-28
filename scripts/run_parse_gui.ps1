@@ -1,0 +1,16 @@
+# Lightweight parser for SwitchMoveCapturesGUI.ps1
+# Usage: powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\run_parse_gui.ps1
+$target = Join-Path $PSScriptRoot 'SwitchMoveCapturesGUI.ps1'
+if (-not (Test-Path $target)) {
+    Write-Host "Target not found: $target"; exit 2
+}
+$s = Get-Content -Raw -Encoding UTF8 -Path $target
+try {
+    [scriptblock]::Create($s) | Out-Null
+    Write-Host 'PARSE_OK'
+    exit 0
+} catch {
+    Write-Host 'PARSE_FAIL'
+    $_ | Format-List * -Force
+    exit 1
+}

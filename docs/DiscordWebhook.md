@@ -1,6 +1,5 @@
 # How to Create a Discord Webhook
 
-
 > **Tip:** You can now configure Discord notifications directly from the GUI (`SwitchMoveCapturesGUI.ps1`).
 
 This guide explains how to create a Discord webhook for use with the SwitchMoveCaptures notification system.

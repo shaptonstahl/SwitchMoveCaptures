@@ -68,9 +68,9 @@ Automatically move screen captures and videos from your Nintendo Switch to your 
   - Most users do not need to edit YAML manually; the GUI handles device management automatically.
 
 
-## Documentation Languages
+## Documentation
 
-[English](docs/en/README.md) | [Español](docs/es/README.md) | [Français](docs/fr/README.md) | [Deutsch](docs/de/README.md) | [日本語](docs/ja/README.md) | [简体中文](docs/zh/README.md)
+English docs are available in the `docs/en/` folder.
 
 ## Contributing
 

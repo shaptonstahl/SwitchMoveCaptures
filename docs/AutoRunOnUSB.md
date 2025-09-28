@@ -11,6 +11,22 @@ This guide explains how to configure Windows to automatically run the SwitchMove
 ### 1. Open Task Scheduler
 - Press `Win + S` and search for **Task Scheduler**. Open it.
 
+```markdown
+# English Documentation
+
+# Automatically Run PowerShell Script When a USB Drive Connects on Windows
+
+This guide explains how to configure Windows to automatically run the SwitchMoveCaptures PowerShell script when your Nintendo Switch (or any USB drive) is connected.
+
+**Note:** These instructions are current as of July 4, 2025. Windows features and settings may change, so refer to official Microsoft documentation for the latest information.
+
+---
+
+## Method 1: Using Task Scheduler
+
+### 1. Open Task Scheduler
+- Press `Win + S` and search for **Task Scheduler**. Open it.
+
 ### 2. Create a New Task
 - In the right pane, click **Create Task**.
 
@@ -60,3 +76,5 @@ This guide explains how to configure Windows to automatically run the SwitchMove
 ---
 
 *These instructions are current as of July 4, 2025.*
+
+``` 

@@ -308,7 +308,7 @@ $destination = Join-Path $baseDestination $deviceLabel
                 $log += "Deleted from Switch: $path"
             }
             catch {
-                $log += "ERROR deleting $path: $_"
+                $log += "ERROR deleting ${path}: $_"
             }
         }
     } elseif ($deleteAfterCopy) {

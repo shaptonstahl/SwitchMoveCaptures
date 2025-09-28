@@ -1,5 +1,6 @@
-# How to Create a Slack Webhook
+# English Documentation
 
+# How to Create a Slack Webhook
 
 > **Tip:** You can now configure Slack notifications directly from the GUI (`SwitchMoveCapturesGUI.ps1`).
 
