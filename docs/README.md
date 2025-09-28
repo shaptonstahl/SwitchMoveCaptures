@@ -18,7 +18,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\SwitchMoveCapt
 
 ## Notes
 - These files are the canonical English documentation for the project. Localized copies were archived to `docs/_locales_backup/`.
-- If you need to reference general project metadata (license, installer, changelog), see the repository root: [Project README](../README.md)
+- If you need to reference general project metadata (license, installer, changelog), see the repository root: [Project README](https://github.com/shaptonstahl/SwitchMoveCaptures/blob/main/README.md)
 
 ## Contributing
 - Edit the Markdown files in this folder. Keep links relative (e.g., `ScriptConfiguration.md`) so they render correctly on GitHub.

@@ -16,16 +16,22 @@ SolidCompression=yes
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
-Source: "scripts\*"; DestDir: "{app}\scripts"; Flags: recursesubdirs
-Source: "docs\*"; DestDir: "{app}\docs"; Flags: recursesubdirs
-Source: "requirements.txt"; DestDir: "{app}"
+; Include only runtime files needed to run the application
+Source: "scripts\SwitchMoveCaptures.ps1"; DestDir: "{app}\scripts"
+Source: "scripts\SwitchMoveCapturesGUI.ps1"; DestDir: "{app}\scripts"
+Source: "scripts\AllowedSwitchDevices.yaml"; DestDir: "{app}\scripts"
+; Include license for compliance
 Source: "LICENSE"; DestDir: "{app}"
+; Include top-level README and user docs
 Source: "README.md"; DestDir: "{app}"
+; If you build docs with MkDocs, include the generated static site
+Source: "site\*"; DestDir: "{app}\docs"; Flags: recursesubdirs
 
 [Icons]
 
 Name: "{group}\SwitchMoveCaptures GUI"; Filename: "{sys}\WindowsPowerShell\v1.0\powershell.exe"; Parameters: "-ExecutionPolicy Bypass -File ""{app}\scripts\SwitchMoveCapturesGUI.ps1"""; WorkingDir: "{app}\scripts"; IconFilename: "{sys}\WindowsPowerShell\v1.0\powershell.exe"
 Name: "{group}\SwitchMoveCaptures Script"; Filename: "{sys}\WindowsPowerShell\v1.0\powershell.exe"; Parameters: "-ExecutionPolicy Bypass -File ""{app}\scripts\SwitchMoveCaptures.ps1"""; WorkingDir: "{app}\scripts"; IconFilename: "{sys}\WindowsPowerShell\v1.0\powershell.exe"
+Name: "{group}\Documentation"; Filename: "{cmd}"; Parameters: "/c start """" ""{app}\docs\index.html"""; WorkingDir: "{app}\docs"; IconFilename: "{sys}\WindowsPowerShell\v1.0\powershell.exe"
 
 [Run]
 Filename: "{sys}\WindowsPowerShell\v1.0\powershell.exe"; Parameters: "-ExecutionPolicy Bypass -File ""{app}\scripts\SwitchMoveCapturesGUI.ps1"""; Description: "Launch SwitchMoveCaptures GUI"; Flags: nowait postinstall skipifsilent

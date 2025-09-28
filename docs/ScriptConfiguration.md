@@ -24,7 +24,7 @@ Most users should use the GUI (`SwitchMoveCapturesGUI.ps1`) to configure all opt
 - [Delete After Copy (`$deleteAfterCopy`)](#delete-after-copy-deleteaftercopy)
 - [Max Log Files (`$maxLogFiles`)](#max-log-files-maxlogfiles)
 - [Organize by Game (`$organizeByGame`)](#organize-by-game-organizebygame)
-- [Device Selection (`$allowAllSwitchDevices`, `$allowedSwitchDevices`)](#device-selection-allowallswitchdevices-allowedswitchdevices)
+- [Device Selection (`$allowAllSwitchDevices`, `$allowedSwitchDevices`)](#device-management-allowedswitchdevices)
 - [Google Chat Webhook (`$enableGoogleChatNotification`, `$googleChatWebhookUrl`)](#google-chat-webhook-enablegooglechatnotification-googlechatwebhookurl)
 - [Email Notification Settings (`$enableEmailNotification`, `$smtpServer`, `$smtpPort`, `$smtpUser`, `$smtpPassword`, `$emailFrom`, `$emailTo`, `$emailSubject`)](#email-notification-settings-enableemailnotification-smtpserver-smtpport-smtpuser-smtppassword-emailfrom-emailto-emailsubject)
 
