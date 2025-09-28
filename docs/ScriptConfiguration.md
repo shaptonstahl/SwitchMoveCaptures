@@ -88,6 +88,7 @@ $organizeByGame = $true
 ---
 
 
+<div id="device-management-allowedswitchdevices"></div>
 ## Device Management (AllowedSwitchDevices.yaml)
 **Description:**
 Device management is handled via the `AllowedSwitchDevices.yaml` file. The recommended way to manage devices is through the GUI, which allows you to add, label, and remove devices visually. When a Nintendo device is detected, the script attempts to identify it by its SD card serial number. If the device is new, the user is prompted to provide a label (required, can include spaces and special characters) and to confirm whether to import files from the device. The label and serial are then stored in `AllowedSwitchDevices.yaml` for future use.
