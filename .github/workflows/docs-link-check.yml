@@ -1,0 +1,27 @@
+name: Docs link check
+
+on:
+  push:
+    paths:
+      - 'docs/**'
+      - 'scripts/check_docs_links.ps1'
+  pull_request:
+    paths:
+      - 'docs/**'
+      - 'scripts/check_docs_links.ps1'
+
+jobs:
+  link-check:
+    name: Check docs links
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run docs link checker
+        shell: pwsh
+        run: |
+          Write-Host 'Running docs link checker'
+          Set-StrictMode -Version Latest
+          # Exit non-zero if broken links are found
+          powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\check_docs_links.ps1

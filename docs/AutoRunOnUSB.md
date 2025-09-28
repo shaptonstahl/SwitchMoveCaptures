@@ -6,24 +6,6 @@ This guide explains how to configure Windows to automatically run the SwitchMove
 
 ---
 
-## Method 1: Using Task Scheduler
-
-### 1. Open Task Scheduler
-- Press `Win + S` and search for **Task Scheduler**. Open it.
-
-```markdown
-# English Documentation
-
-# Automatically Run PowerShell Script When a USB Drive Connects on Windows
-
-This guide explains how to configure Windows to automatically run the SwitchMoveCaptures PowerShell script when your Nintendo Switch (or any USB drive) is connected.
-
-**Note:** These instructions are current as of July 4, 2025. Windows features and settings may change, so refer to official Microsoft documentation for the latest information.
-
----
-
-## Method 1: Using Task Scheduler
-
 ### 1. Open Task Scheduler
 - Press `Win + S` and search for **Task Scheduler**. Open it.
 
@@ -56,25 +38,25 @@ This guide explains how to configure Windows to automatically run the SwitchMove
 - Click **OK**.
 
 ### 6. Conditions and Settings
-- Adjust as needed (e.g., only run if user is logged in).
+- Adjust conditions as needed (for example, only run if the user is logged on).
 
 ### 7. Save the Task
-- Click **OK** to save.
+- Click **OK** to save the task.
 
 ---
 
 ## Notes
-- You may need to adjust permissions or execution policy to allow the script to run.
-- This method will trigger on any USB device. The SwitchMoveCaptures script supports filtering by device serial and label, so you can configure it to only import from specific Switch devices (see device management in the GUI or [docs/ScriptConfiguration.md](ScriptConfiguration.md)).
-- The script also supports advanced filtering by file type (screenshots or videos), game-based organization, and deduplication by file hash. See [docs/ScriptConfiguration.md](ScriptConfiguration.md) for details on these features and how to configure them.
-- **Tip:** Use the GUI (`SwitchMoveCapturesGUI.ps1`) to configure all options and manage devices before automating the import process.
+
+- You may need to adjust execution policy or script permissions to allow the script to run. Running the task as a user with appropriate permissions and using `-ExecutionPolicy Bypass` in the action usually resolves this.
+- This trigger will fire for any USB device. The `SwitchMoveCaptures` script supports filtering by device serial and label; configure the device list in the GUI or the device YAML before enabling automation.
+- For configuration details (organizing by game, filtering screenshots/videos, deduplication), see [ScriptConfiguration.md](ScriptConfiguration.md).
+- Tip: Run and test the script manually (or with the GUI `SwitchMoveCapturesGUI.ps1`) to confirm behavior before attaching it to an automated task.
 
 ## References
+
 - [Microsoft Docs: Task Scheduler](https://learn.microsoft.com/en-us/windows/win32/taskschd/task-scheduler-start-page)
 - [Event ID 2003 Reference](https://learn.microsoft.com/en-us/windows/win32/taskschd/task-triggers)
 
 ---
 
 *These instructions are current as of July 4, 2025.*
-
-``` 

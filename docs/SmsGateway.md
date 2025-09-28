@@ -1,5 +1,3 @@
-# English Documentation
-
 # How to Send SMS Notifications via Email-to-SMS Gateway
 
 
