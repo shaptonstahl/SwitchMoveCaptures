@@ -1,0 +1,8 @@
+# Normalize text files and enforce LF in the repository
+* text=auto
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.ps1 text eol=crlf
+*.iss text eol=crlf
+site/** text working-tree-encoding=UTF-8

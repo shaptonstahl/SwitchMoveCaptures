@@ -1,0 +1,5 @@
+# Ignore generated documentation site
+site/
+
+# Python user-installed scripts folder (may be on PATH on CI)
+%APPDATA%/Python/*/Scripts/
